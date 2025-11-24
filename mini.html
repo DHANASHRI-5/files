@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krantikar - Freedom Fighters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Krantikar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- Links to specific pages can be added here as the site grows -->
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Our Heroes</h2>
+        
+        <div class="fighter-card">
+            <img src="C:\Users\Admin\OneDrive\E shop\Mahatma-Gandhi.jpg" alt="Mahatma Gandhi Photo">
+            <h3>Mahatma Gandhi</h3>
+            <p>Leader of the nonviolent Indian independence movement.</p>
+            <a href="gandhi.html" class="C:\Users\Admin\Desktop\New folder\gandhi.html">more 			information</a>
+            <a href="gandhi.html#reviews" class="review-link">Reviews</a>
+        </div>
+
+        <div class="fighter-card"> 
+            <img src="https://raw.github.com/DHANASHRI-5/images/main/bhagatsingh.jpg" alt="Bhagat Singh Photo" class="right-image">
+            <h3>Bhagat Singh</h3>
+            <p>A revolutionary who was influential in the Indian independence movement.</p>
+            <a href="bhagat_singh.html" class="info-link">More Information</a>
+            <a href="bhagat_singh.html#reviews" class="review-link">Reviews</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Krantikar. For the love of the nation.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagat Singh - Krantikar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Krantikar</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <span>Bhagat Singh</span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Bhagat Singh</h2>
+        <img src="bhagat_singh.jpg" alt="Bhagat Singh Photo" class="fighter-image-large">
+        <p>Bhagat Singh was a charismatic Indian revolutionary who participated in a short but influential revolutionary movement against British rule in India. He was a prominent figure in the Indian independence movement.</p>
+        <p><strong>Key Contributions:</strong> Central Assembly Bombing, advocating for socialism, inspiring youth with his sacrifice.</p>
+
+        <h3 id="reviews">Reviews & Tributes</h3>
+        <div class="review-section">
+            <p>"His bravery is unmatched. Long live the revolution!" - Patriot 1</p>
+            <p>"A young soul who sacrificed everything for freedom." - Anon</p>
+            <p>Leave your tribute:</p>
+            <textarea placeholder="Your thoughts here..."></textarea><br>
+            <button>Submit Review</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Krantikar. For the love of the nation.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: #e67e22; /* A warm color for the theme */
+    color: white;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: 3px solid #d35400;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #333;
+}
+
+.fighter-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fighter-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.fighter-image-large {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-link, .review-link {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.review-link {
+    background: #2ecc71;
+}
+
+.info-link:hover, .review-link:hover {
+    opacity: 0.9;
+}
+
+.review-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #e67e22;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
